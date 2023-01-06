@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Raleway:wght@300;400;600;900&family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,600;1,100;1,700&family=Rubik+Vinyl&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-image: url(./aaaaaa.jpg);
+        color: rgb(145, 140, 212);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+
+      #container {
+        max-width: 1240px;
+
+        margin: auto;
+        margin-top: 30px;
+        padding: 1px;
+      }
+      #title {
+        font-size: 3.1em;
+        color: rgb(255, 3, 3);
+        font-family: "Bowlby One SC", cursive;
+        letter-spacing: 0.05em;
+      }
+
+      #description {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+
+      #header {
+        text-align: center;
+      }
+
+      textarea {
+        resize: none;
+      }
+
+      #survey-form-container {
+        border: 2px solid;
+        width: 500px;
+        background-color: rgb(1, 1, 1);
+        margin: auto;
+        padding: 30px 40px;
+      }
+
+      #name,
+      #age,
+      #email,
+      #feedback {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+      }
+
+      .input-box {
+        border: 2px solid rgb(1, 1, 1);
+      }
+
+      #form-button {
+        width: 160px;
+        height: 45px;
+        background-color: rgb(72, 72, 181);
+        color: rgb(239, 243, 246);
+        border: none;
+        border-radius: 20px;
+      }
+
+      .form1 {
+        width: 160px;
+        margin: auto;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="netflix.css" />
+    <script>
+      const resultlist = document.getElementById("results");
+      new URLSearchParams(window.location.search).forEach((value, name) => {
+        resultlist.append(`${name}: ${value}`);
+        resultlist.append;
+        document.createElement("br");
+      });
+    </script>
+    <title>Netflix</title>
+  </head>
+  <body>
+    <div id="container">
+      <header id="header">
+        <h1 id="title">NETFLIX</h1>
+      </header>
+
+      <section id="survey-form-container">
+        <h3 id="description">
+          Thank you for signing up to Netflix. Tell me more about yourself.
+        </h3>
+        <br />
+        <form action="results.html" method="get">
+          <div class="input-box">
+            <label for="name">Name</label>
+            <br />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter Your Name"
+            />
+          </div>
+
+          <div class="input-box">
+            <label for="Age">Age</label>
+            <br />
+            <input type="number" name="Age" id="age" placeholder="Age" />
+          </div>
+
+          <div class="input-box">
+            <label for="email">Email</label>
+            <br />
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Enter Your Email"
+            />
+          </div>
+          <br />
+
+          <div class="input-box">
+            <label for="">Content Type</label>
+            <br />
+            <select name="content" id="dropdown">
+              <option value="">Movies</option>
+              <option value="">Series</option>
+              <option value="">TV Shows</option>
+              <option value="">Documents</option>
+            </select>
+          </div>
+          <br />
+
+          <div class="input-box">
+            <label for="">Select</label>
+            <br />
+            <input
+              type="checkbox"
+              name="select1"
+              id="first-check"
+              value="Action"
+            />
+            <label for="first-check">Action</label>
+            <br />
+
+            <input
+              type="checkbox"
+              name="select2"
+              id="second-check"
+              value="Anime"
+            />
+            <label for="second-check">Anime</label>
+
+            <input
+              type="checkbox"
+              name="select3"
+              id="third-check"
+              value="Classics"
+            />
+            <label for="third-check">Classics</label>
+
+            <input
+              type="checkbox"
+              name="select4"
+              id="fourth-check"
+              value="Comedies"
+            />
+            <label for="fourth-check">Comedies</label>
+            <br />
+
+            <input
+              type="checkbox"
+              name="select5"
+              id="fifth-check"
+              value="Documentaries"
+            />
+            <label for="fifth-check">Documentaries</label>
+
+            <input
+              type="checkbox"
+              name="select6"
+              id="sixth-check"
+              value="Dramas"
+            />
+            <label for="sixth-check">Dramas</label>
+
+            <input
+              type="checkbox"
+              name="select7"
+              id="seventh-check"
+              value="Horror"
+            />
+            <label for="seventh-check">Horror</label>
+
+            <input
+              type="checkbox"
+              name="select8"
+              id="eight-check"
+              value="Independent"
+            />
+            <label for="eight-check">Independent</label>
+            <br />
+
+            <input
+              type="checkbox"
+              name="select9"
+              id="ninth-check"
+              value="Children & Family"
+            />
+            <label for="ninth-check">Children & Family</label>
+
+            <input
+              type="checkbox"
+              name="select10"
+              id="tenth-check"
+              value="Music"
+            />
+            <label for="tenth-check">Music</label>
+
+            <input
+              type="checkbox"
+              name="select11"
+              id="eleventh-check"
+              value="Romance"
+            />
+            <label for="eleventh-check">Romance</label>
+
+            <input
+              type="checkbox"
+              name="select12"
+              id="twelfth-check"
+              value="Sports"
+            />
+            <label for="twelfth-check">Sports</label>
+            <br />
+
+            <input
+              type="checkbox"
+              name="select13"
+              id="thirteenth-check"
+              value="Reality"
+            />
+            <label for="thirteenth-check">Reality</label>
+
+            <input
+              type="checkbox"
+              name="select14"
+              id="fourteenth-check"
+              value="Stand-up & Talk Shows"
+            />
+            <label for="fourteenth-check">Stand-up & Talk Shows</label>
+
+            <input
+              type="checkbox"
+              name="select15"
+              id="fifteenth-check"
+              value="International"
+            />
+            <label for="fifteenth-check">International</label>
+            <br />
+            <br />
+
+            <div class="input-box">
+              <label for="">Gender</label>
+              <br />
+              <input
+                type="radio"
+                name="gender"
+                id="first-radio"
+                value="Female"
+              />
+              <label for="first-radio">Female</label>
+
+              <input
+                type="radio"
+                name="gender"
+                id="second-radio"
+                value="Male"
+              />
+              <label for="second-radio">Male</label>
+
+              <input
+                type="radio"
+                name="gender"
+                id="third-radio"
+                value="Other"
+              />
+              <label for="third-radio">Other</label>
+            </div>
+            <br />
+            <div class="input-box">
+              <label for="">Feedback</label>
+              <br />
+              <textarea
+                name="feedback"
+                id="feedback"
+                placeholder="Your Opinion"
+              >
+              </textarea>
+            </div>
+          </div>
+          <br />
+
+          <div class="form1">
+            <input id="form-button" type="submit" value="SEND" />
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
